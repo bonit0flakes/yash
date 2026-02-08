@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yash Jiwani - EEE Portfolio</title>
+    <meta
+      name="description"
+      content="Yash Jiwani, Electrical and Electronics Engineering graduate with experience across ASIC design, R&D, and data analysis."
+    />
+    <meta property="og:title" content="Yash Jiwani - EEE Portfolio" />
+    <meta
+      property="og:description"
+      content="Electrical and Electronics Engineering graduate showcasing education, skills, experience, and projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bonit0flakes.github.io/yash/" />
+    <meta property="og:image" content="" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preload" href="fonts/visby/VisbyRegular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="fonts/visby/VisbyBold.woff" as="font" type="font/woff" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#about">Skip to content</a>
+
+    <header class="topbar">
+       <div class="brand" aria-label="Site brand">
+         <div class="brand-text">
+           <span class="name">Yash Jiwani</span>
+           <span class="role">Electrical and Electronics Engineering</span>
+         </div>
+       </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#coursework">Coursework</a>
+      </nav>
+      <div class="top-actions">
+          <button class="btn icon" id="themeToggle" type="button" aria-label="Toggle color theme">
+            <img src="assets/sun.svg" alt="" class="icon-sun" />
+            <img src="assets/moon.svg" alt="" class="icon-moon" />
+          </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section hero" aria-labelledby="about-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M30 40 H110 V100 H50 V160 H120 V220 H40 V280 H110 V340 H60 V400 H120" />
+            <path class="trace" d="M120 80 V150 H80 V230 H130 V310 H90 V390" />
+            <rect x="58" y="210" width="44" height="50" class="chip" />
+            <path class="pin" d="M58 220 h-8 M58 236 h-8 M58 252 h-8 M102 220 h8 M102 236 h8 M102 252 h8" />
+            <circle cx="110" cy="100" r="4" class="node" />
+            <circle cx="50" cy="160" r="4" class="node" />
+            <circle cx="120" cy="220" r="4" class="node" />
+            <circle cx="40" cy="280" r="4" class="node" />
+            <circle cx="110" cy="340" r="4" class="node" />
+            <rect x="18" y="320" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card">
+          <div class="hero-bg" aria-hidden="true">
+            <svg viewBox="0 0 1200 220" preserveAspectRatio="none">
+              <path
+                class="wave"
+                d="M0,130 C120,90 240,170 360,130 C480,90 600,170 720,130 C840,90 960,170 1080,130 C1120,120 1160,110 1200,100"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="section-head">
+            <div class="eyebrow">Profile</div>
+             <h1 id="about-title">Yash Jiwani</h1>
+            <p class="subtitle">Electrical and Electronics Engineering (EEE) Graduate</p>
+          </div>
+          <div class="contact-grid">
+             <button
+               type="button"
+               class="contact copy"
+               data-copy="yashsjiwani@gmail.com"
+               aria-label="Copy email"
+             >
+               <img src="assets/mail.svg" alt="" />
+               yashsjiwani@gmail.com
+               <span class="sr-only" aria-live="polite"></span>
+             </button>
+             <button
+               type="button"
+               class="contact copy"
+               data-copy="+91 8788234383"
+               aria-label="Copy phone number"
+             >
+               <img src="assets/phone.svg" alt="" />
+               +91 8788234383
+               <span class="sr-only" aria-live="polite"></span>
+             </button>
+             <a
+               href="https://linkedin.com/in/yash-jiwani"
+               target="_blank"
+               rel="noreferrer"
+               class="contact"
+               aria-label="LinkedIn"
+             >
+               <img src="assets/link.svg" alt="" />
+               linkedin.com/in/yash-jiwani
+             </a>
+             <a
+               href="https://github.com/bonit0flakes/"
+               target="_blank"
+               rel="noreferrer"
+               class="contact"
+               aria-label="GitHub"
+             >
+               <img src="assets/github.svg" alt="" />
+               github.com/bonit0flakes
+             </a>
+          </div>
+          <div class="hero-tags" aria-label="Highlights">
+            <span>ASIC Design</span>
+            <span>FPGA</span>
+            <span>Signal Processing</span>
+            <span>Mixed-Signal Systems</span>
+          </div>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 30 V110 H70 V180 H130 V250 H60 V320 H120 V390 H80 V470" />
+            <path class="trace" d="M40 60 H100 V130 H50 V200 H110 V270 H40 V340" />
+            <path class="res" d="M30 140 h10 l5 -8 l10 16 l10 -16 l10 16 l10 -16 l10 16 l10 -8 h10" />
+            <rect x="68" y="230" width="40" height="46" class="chip" />
+            <path class="pin" d="M68 240 h-8 M68 256 h-8 M68 272 h-8 M108 240 h8 M108 256 h8 M108 272 h8" />
+            <circle cx="70" cy="180" r="4" class="node" />
+            <circle cx="130" cy="250" r="4" class="node" />
+            <circle cx="60" cy="320" r="4" class="node" />
+            <rect x="130" y="90" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="education" class="section" aria-labelledby="education-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M40 40 H120 V90 H60 V150 H130 V210 H50 V270 H120 V330 H70 V390 H120" />
+            <path class="trace" d="M120 70 V140 H80 V220 H130 V300 H90 V380" />
+            <path class="res" d="M20 190 h12 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l12 -8 h12" />
+            <rect x="64" y="240" width="38" height="42" class="chip" />
+            <path class="pin" d="M64 248 h-8 M64 262 h-8 M64 276 h-8 M102 248 h8 M102 262 h8 M102 276 h8" />
+            <circle cx="60" cy="150" r="4" class="node" />
+            <circle cx="130" cy="210" r="4" class="node" />
+            <circle cx="50" cy="270" r="4" class="node" />
+            <circle cx="120" cy="330" r="4" class="node" />
+            <rect x="130" y="110" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card reveal-on-scroll">
+          <div class="section-head">
+            <div class="eyebrow">Education</div>
+            <div class="circuit-strip" aria-hidden="true"></div>
+            <h2 id="education-title">Education</h2>
+          </div>
+          <div class="edu">
+            <div class="edu-text">
+              <div class="edu-title">BITS Pilani</div>
+              <div class="edu-meta">Bachelor of Engineering (Hons.) - Electrical and Electronics Engineering</div>
+              <div class="edu-trace" aria-hidden="true"></div>
+            </div>
+            <div class="edu-mark" aria-hidden="true">
+              <img src="assets/BITS_Pilani-Logo.svg" alt="" class="edu-logo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 30 V90 H60 V150 H130 V210 H70 V270 H120 V330 H90 V390 H120" />
+            <path class="trace" d="M30 60 H100 V120 H40 V180 H110 V240 H50 V300" />
+            <rect x="72" y="230" width="36" height="40" class="chip" />
+            <path class="pin" d="M72 238 h-8 M72 252 h-8 M72 266 h-8 M108 238 h8 M108 252 h8 M108 266 h8" />
+            <circle cx="60" cy="150" r="4" class="node" />
+            <circle cx="130" cy="210" r="4" class="node" />
+            <circle cx="70" cy="270" r="4" class="node" />
+            <circle cx="120" cy="330" r="4" class="node" />
+            <rect x="24" y="300" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M30 50 H110 V120 H50 V190 H120 V260 H60 V330 H110 V400" />
+            <path class="trace" d="M120 80 V150 H80 V230 H130 V310 H90 V390" />
+            <path class="res" d="M20 210 h12 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l12 -8 h12" />
+            <rect x="62" y="240" width="40" height="44" class="chip" />
+            <path class="pin" d="M62 248 h-8 M62 262 h-8 M62 276 h-8 M102 248 h8 M102 262 h8 M102 276 h8" />
+            <circle cx="50" cy="190" r="4" class="node" />
+            <circle cx="120" cy="260" r="4" class="node" />
+            <circle cx="60" cy="330" r="4" class="node" />
+            <circle cx="110" cy="400" r="4" class="node" />
+            <rect x="130" y="140" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card reveal-on-scroll">
+          <div class="section-head">
+            <div class="eyebrow">Skills</div>
+            <div class="circuit-strip" aria-hidden="true"></div>
+            <h2 id="skills-title">Technical Skills</h2>
+          </div>
+          <div class="skills">
+            <div class="skill-group">
+              <div class="skill-title">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-capacitor" /></svg>
+                Design &amp; Simulation Tools
+              </div>
+              <div class="skill-tags" aria-label="Design and Simulation Tools">
+                <span>Vivado</span>
+                <span>Vitis</span>
+                <span>Cadence</span>
+                <span>LTspice</span>
+                <span>MATLAB</span>
+                <span>Simulink</span>
+                <span>FPGA (Zedboard)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 40 V120 H70 V190 H130 V260 H60 V330 H120 V400" />
+            <path class="trace" d="M30 70 H100 V140 H40 V210 H110 V280 H50 V350" />
+            <rect x="70" y="230" width="38" height="44" class="chip" />
+            <path class="pin" d="M70 238 h-8 M70 252 h-8 M70 266 h-8 M108 238 h8 M108 252 h8 M108 266 h8" />
+            <circle cx="70" cy="190" r="4" class="node" />
+            <circle cx="130" cy="260" r="4" class="node" />
+            <circle cx="60" cy="330" r="4" class="node" />
+            <circle cx="120" cy="400" r="4" class="node" />
+            <rect x="24" y="350" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M30 40 H110 V110 H50 V180 H120 V250 H60 V320 H110 V390" />
+            <path class="trace" d="M120 70 V140 H80 V220 H130 V300 H90 V380" />
+            <rect x="64" y="230" width="40" height="44" class="chip" />
+            <path class="pin" d="M64 238 h-8 M64 252 h-8 M64 266 h-8 M104 238 h8 M104 252 h8 M104 266 h8" />
+            <circle cx="50" cy="180" r="4" class="node" />
+            <circle cx="120" cy="250" r="4" class="node" />
+            <circle cx="60" cy="320" r="4" class="node" />
+            <circle cx="110" cy="390" r="4" class="node" />
+            <rect x="130" y="120" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card reveal-on-scroll">
+          <div class="section-head">
+            <div class="eyebrow">Experience</div>
+            <div class="circuit-strip" aria-hidden="true"></div>
+            <h2 id="experience-title">Work Experience</h2>
+          </div>
+          <div class="timeline" data-animate-line>
+            <div class="line" aria-hidden="true"></div>
+            <article class="timeline-item reveal-on-scroll stagger-1">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                 <h3>SignalMash – Senior Advisor <span class="badge-current">Current</span></h3>
+                <div class="meta">Portland,U.S. (Remote) | July 2025-Present</div>
+                <ul>
+                  <li>Act as the first point of contact for prospective customers, engaging them to understand their core business challenges and product pain points.</li>
+                  <li>Qualify inbound and outbound leads by aligning their needs with the product's core value proposition, identifying high-potential user segments.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-2">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                 <h3>Adaptive Intelligence – Electronics R&D Engineer</h3>
+                <div class="meta">Hyderabad | Dec 2024 &ndash; Feb 2025</div>
+                <ul>
+                  <li>Designed linear sensor readout circuit for Velostat-based bed posture system, ensuring consistent pressure measurements.</li>
+                  <li>Collaborated with cross-functional teams to improve sensor linearity achieving 85% of ideal value, enhancing ML-based posture analysis precision.</li>
+                  <li>Enhanced sensor precision and stability by 20%, improving bed-adjustment feature for neutral spine posture maintenance.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-3">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                 <h3>Unity Growth Fund – Business Analyst</h3>
+                <div class="meta">Delaware, U.S. (Remote) | June 2024 &ndash; Dec 2024</div>
+                <ul>
+                  <li>Developed Python automation scripts for data extraction from government databases (FINRA, SEC) covering 3,200+ entities.</li>
+                  <li>Led systematic data analysis and validation processes, establishing SOPs for large-scale dataset management.</li>
+                  <li>Researched and developed 25+ comprehensive analysis decks for portfolio companies and investment evaluation.</li>
+                  <li>Collaborated with C-suite executives on deal evaluation and investor relations, streamlining outreach for 5,000+ investors.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-1">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Teaching Assistant &ndash; Signals and Systems</h3>
+                <div class="meta">BITS Goa | Jan &ndash; May 2023</div>
+                <ul>
+                  <li>Conducted doubt-clearing sessions and examined tests for 365 Electronics undergraduate students (ECE, EEE, EIE)</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 30 V110 H70 V180 H130 V250 H60 V320 H120 V390" />
+            <path class="trace" d="M30 60 H100 V130 H40 V200 H110 V270 H50 V340" />
+            <path class="res" d="M20 240 h12 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l12 -8 h12" />
+            <rect x="72" y="230" width="36" height="42" class="chip" />
+            <path class="pin" d="M72 238 h-8 M72 252 h-8 M72 266 h-8 M108 238 h8 M108 252 h8 M108 266 h8" />
+            <circle cx="70" cy="180" r="4" class="node" />
+            <circle cx="130" cy="250" r="4" class="node" />
+            <circle cx="60" cy="320" r="4" class="node" />
+            <circle cx="120" cy="390" r="4" class="node" />
+            <rect x="24" y="340" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M30 40 H110 V100 H50 V160 H120 V220 H60 V280 H110 V340 H70 V400" />
+            <path class="trace" d="M120 70 V140 H80 V210 H130 V280 H90 V350" />
+            <rect x="64" y="230" width="40" height="44" class="chip" />
+            <path class="pin" d="M64 238 h-8 M64 252 h-8 M64 266 h-8 M104 238 h8 M104 252 h8 M104 266 h8" />
+            <circle cx="50" cy="160" r="4" class="node" />
+            <circle cx="120" cy="220" r="4" class="node" />
+            <circle cx="60" cy="280" r="4" class="node" />
+            <circle cx="110" cy="340" r="4" class="node" />
+            <rect x="130" y="120" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card reveal-on-scroll">
+          <div class="section-head">
+            <div class="eyebrow">Projects</div>
+            <div class="circuit-strip" aria-hidden="true"></div>
+            <h2 id="projects-title">Technical Projects</h2>
+          </div>
+          <div class="timeline" data-animate-line>
+            <div class="line" aria-hidden="true"></div>
+            <article class="timeline-item reveal-on-scroll stagger-1">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                 <h3>ASIC for Low Power Surveillance System (Image + Audio Sensors) – Design and Simulation</h3>
+                <div class="meta">IIT KGP | May 2025 &ndash; July 2025</div>
+                <ul>
+                  <li>Designing a custom Battery driven ASIC with integrated image/audio sensor, AFE, SAR ADC, LDO, memory, and DSP modules for specialized surveillance applications for remote areas.</li>
+                  <li>Achieved functional capabilities including mixed-signal integration, noise optimization, power management, and verification using industry-standard EDA tools- LTSpice, Vivado and MATLAB Simulink.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-2">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                <h3>FPU Design for MIPS Processor</h3>
+                <div class="meta">BITS Pilani | Aug &ndash; Dec 2023</div>
+                <ul>
+                  <li>Implemented Verilog-based functional design capable of performing 32-bit floating-point arithmetic operations as described by IEEE-754 representation.</li>
+                  <li>Integrated FPU in the existing MIPS processor single-cycle design and validated functionality using varied datasets.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-3">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                <h3>MIPS-Based Processor Design</h3>
+                <div class="meta">BITS Pilani | Jan &ndash; May 2023</div>
+                <ul>
+                  <li>Implemented complete MIPS processor hardware design in Verilog, simulated using Vivado-Xilinx.</li>
+                  <li>Converted single-cycle design to 5-stage pipeline with control and hazard detection circuits.</li>
+                  <li>Resolved forwarding hazards using bypass paths, enhancing data flow and reducing pipeline stalls by 25%; this ensured seamless instruction execution and improved processing efficiency.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal-on-scroll stagger-1">
+              <div class="node" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Software Receiver for NavIC</h3>
+                <div class="meta">BITS Pilani | Aug &ndash; Dec 2023</div>
+                <ul>
+                  <li>Developed NavIC-based signal receiver with signal acquisition, decoding, and L1C signal retrieval capabilities.</li>
+                  <li>Implemented software solution in MATLAB with bitwise operations for accurate data extraction.</li>
+                  <li>Synchronized with locally generated reference signals for precise L1C data processing.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 40 V100 H70 V160 H130 V220 H60 V280 H120 V340" />
+            <path class="trace" d="M30 70 H100 V130 H40 V190 H110 V250 H50 V310" />
+            <path class="res" d="M20 210 h12 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l12 -8 h12" />
+            <rect x="72" y="230" width="36" height="42" class="chip" />
+            <path class="pin" d="M72 238 h-8 M72 252 h-8 M72 266 h-8 M108 238 h8 M108 252 h8 M108 266 h8" />
+            <circle cx="70" cy="160" r="4" class="node" />
+            <circle cx="130" cy="220" r="4" class="node" />
+            <circle cx="60" cy="280" r="4" class="node" />
+            <circle cx="120" cy="340" r="4" class="node" />
+            <rect x="24" y="310" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="coursework" class="section" aria-labelledby="coursework-title">
+        <div class="side-visual left" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M30 40 H110 V100 H50 V160 H120 V220 H60 V280 H110 V340" />
+            <path class="trace" d="M120 70 V140 H80 V210 H130 V280 H90 V350" />
+            <rect x="64" y="230" width="40" height="44" class="chip" />
+            <path class="pin" d="M64 238 h-8 M64 252 h-8 M64 266 h-8 M104 238 h8 M104 252 h8 M104 266 h8" />
+            <circle cx="50" cy="160" r="4" class="node" />
+            <circle cx="120" cy="220" r="4" class="node" />
+            <circle cx="60" cy="280" r="4" class="node" />
+            <circle cx="110" cy="340" r="4" class="node" />
+            <rect x="130" y="120" width="6" height="6" class="via" />
+          </svg>
+        </div>
+        <div class="section-card reveal-on-scroll">
+          <div class="section-head">
+            <div class="eyebrow">Coursework</div>
+            <div class="circuit-strip" aria-hidden="true"></div>
+            <h2 id="coursework-title">Academic Coursework</h2>
+          </div>
+          <div class="course-grid" aria-label="Coursework list">
+            <button class="course reveal-on-scroll stagger-1" type="button">
+              <span>Digital Design</span>
+              <small>Logic, circuits, HDL</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-2" type="button">
+              <span>Computer Architecture</span>
+              <small>Pipeline, ISA, memory</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-3" type="button">
+              <span>Computer Programming in C</span>
+              <small>Systems, algorithms</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-1" type="button">
+              <span>Microprocessor and Interfacing</span>
+              <small>Interfaces, IO</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-2" type="button">
+              <span>Control Systems</span>
+              <small>Stability, feedback</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-3" type="button">
+              <span>Communication Systems</span>
+              <small>Analog, digital links</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-1" type="button">
+              <span>Mobile Telecommunication Networks</span>
+              <small>Cellular, RF</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-2" type="button">
+              <span>Signals and Systems</span>
+              <small>Transforms, signals</small>
+            </button>
+            <button class="course reveal-on-scroll stagger-3" type="button">
+              <span>Analog and Digital VLSI Design</span>
+              <small>CMOS, layout</small>
+            </button>
+          </div>
+          <p class="note">Tap a card to expand details.</p>
+        </div>
+        <div class="side-visual right" aria-hidden="true">
+          <svg class="side-circuit" viewBox="0 0 160 520" preserveAspectRatio="xMidYMid meet">
+            <path class="trace" d="M120 40 V100 H70 V160 H130 V220 H60 V280 H120 V340" />
+            <path class="trace" d="M30 70 H100 V130 H40 V190 H110 V250 H50 V310" />
+            <path class="res" d="M20 220 h12 l6 -8 l12 16 l12 -16 l12 16 l12 -16 l12 16 l12 -8 h12" />
+            <rect x="72" y="230" width="36" height="42" class="chip" />
+            <path class="pin" d="M72 238 h-8 M72 252 h-8 M72 266 h-8 M108 238 h8 M108 252 h8 M108 266 h8" />
+            <circle cx="70" cy="160" r="4" class="node" />
+            <circle cx="130" cy="220" r="4" class="node" />
+            <circle cx="60" cy="280" r="4" class="node" />
+            <circle cx="120" cy="340" r="4" class="node" />
+            <rect x="24" y="310" width="6" height="6" class="via" />
+          </svg>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-socials">
+        <a href="mailto:yashsjiwani@gmail.com" aria-label="Email">Email</a>
+        <span aria-hidden="true">&bull;</span>
+        <a href="https://linkedin.com/in/yash-jiwani" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span aria-hidden="true">&bull;</span>
+        <a href="https://github.com/bonit0flakes/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div>Built for GitHub Pages. Static, fast, and accessible.</div>
+    </footer>
+
+  </body>
+</html>
