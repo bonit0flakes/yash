@@ -58,19 +58,19 @@ document.querySelectorAll(".copy").forEach((button) => {
         live.textContent = "Copied";
         setTimeout(() => {
           live.textContent = "";
-        }, 1500);
+        }, 700);
       }
       note.textContent = "Copied";
       note.classList.add("show");
       setTimeout(() => {
         note.classList.remove("show");
-      }, 1200);
+      }, 700);
     } catch {
       if (live) {
         live.textContent = "Copy failed";
         setTimeout(() => {
           live.textContent = "";
-        }, 1500);
+        }, 700);
       }
       note.textContent = "Copy failed";
       note.classList.add("show");

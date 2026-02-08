@@ -1462,8 +1462,8 @@ li::before {
   top: -10px;
   transform: translateY(-100%);
   background: var(--bg);
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: limegreen;
+  border: 1px solid limegreen;
   font-size: 0.75rem;
   padding: 4px 8px;
   opacity: 0;
